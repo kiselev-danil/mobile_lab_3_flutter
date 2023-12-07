@@ -68,11 +68,6 @@ class MyWidget extends Widget {
   Element createElement() {
     return const Row(
       children: [
-        Spacer(),
-        Text("Flutter kinda sucks"),
-        Spacer()  ,
-        Text("Yeah. More than iOS"),
-        Spacer()
       ],
     ).createElement();
   }
