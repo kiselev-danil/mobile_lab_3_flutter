@@ -61,7 +61,7 @@ flutter:
   assets:
     - assets/images/logo.png
     - assets/images/ic_24_arrow_right_square.png
-    - assets/images/ic_24_cross.svg
+    - assets/images/ic_24_cross.png
     - assets/images/ic_36_percent_fill.png
     - assets/images/portrait.png
 
