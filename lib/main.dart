@@ -57,17 +57,40 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: MyWidget()));
+    return const Scaffold(
+        body: Padding(
+            padding: EdgeInsets.only(left: 14, top: 40, right: 14, bottom: 40),
+            child: MyScreen()));
   }
 }
 
-class MyWidget extends Widget {
-  const MyWidget({super.key});
+class MyScreen extends StatelessWidget {
+  const MyScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      children: [TopWidget()],
+    );
+  }
+}
+
+class TopWidget extends Widget {
+  const TopWidget({super.key});
 
   @override
   Element createElement() {
-    return const Row(
+    return Row(
       children: [
+        Padding(
+            padding:
+                const EdgeInsets.only(left: 0, top: 0, right: 0, bottom: 0),
+            child: Image.asset("assets/images/ic_24_cross.png")),
+        const Spacer(),
+        Padding(
+            padding:
+                const EdgeInsets.only(left: 0, top: 0, right: 0, bottom: 0),
+            child: Image.asset("assets/images/ic_24_arrow_right_square.png")),
       ],
     ).createElement();
   }
