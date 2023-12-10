@@ -54,7 +54,15 @@ class _MyHomePageState extends State<MyHomePage>
                 },
                 body: TabBarView(
                   controller: _tabController,
-                  children: const [ProfileTab(), SettingsTab()],
+                  children: const [
+                    SingleChildScrollView(
+                        child: Column(
+                      children: [
+                        ProfileTab(),
+                      ],
+                    )),
+                    SettingsTab()
+                  ],
                 ))));
   }
 }
