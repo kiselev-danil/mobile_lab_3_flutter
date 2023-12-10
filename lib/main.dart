@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lab/SettingsTab.dart';
 import 'package:flutter_lab/SliverBar.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -26,6 +25,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -45,7 +45,8 @@ class _MyHomePageState extends State<MyHomePage>
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-            padding: const EdgeInsets.only(left: 14, top: 40, right: 14, bottom: 40),
+            padding:
+                const EdgeInsets.only(left: 14, top: 40, right: 14, bottom: 40),
             child: NestedScrollView(
                 headerSliverBuilder: (context, value) {
                   return [SliverBar(tabController: _tabController)];
@@ -56,4 +57,3 @@ class _MyHomePageState extends State<MyHomePage>
                 ))));
   }
 }
-
