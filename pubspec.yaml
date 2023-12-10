@@ -64,6 +64,7 @@ flutter:
     - assets/images/ic_24_cross.png
     - assets/images/ic_36_percent_fill.png
     - assets/images/portrait.png
+    - assets/images/settings.gif
 
   # To add assets to your application, add an assets section, like this:
   # assets:

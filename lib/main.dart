@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/SettingsTab.dart';
 import 'package:flutter_lab/SliverBar.dart';
 
 
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage>
                 },
                 body: TabBarView(
                   controller: _tabController,
-                  children: const [Text("Profile"), Text("Settings")],
+                  children: const [Text("Profile"), SettingsTab()],
                 ))));
   }
 }
